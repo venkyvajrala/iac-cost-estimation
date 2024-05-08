@@ -1,0 +1,198 @@
+                                                                                                   
+                                              .***      ***                                         
+                                   ,    ***.********,****                                           
+                                     **********************                                         
+                               *    ************. ***********  *                                    
+                             ///   *******, ****  ////////////******                                
+                               .//************ ///// /////////********                              
+                           ///////// ********///////// //////.********    (,                        
+                     .   ///////////// **** ////////////,////******* ( (/                           
+                       *////////////////   ////////////////  ** ((((((((((((                        
+                        ///,  */////////.   **************,    ((((((((((((((                       
+                       ///////////////.(((((((,******** ///// (((((( (((((((((                      
+                       ///////////// ((((((((((((   ////////// ((((((((((*((((                      
+                        ////////// ((((((((((( ((    //////////(((((((((((((((                      
+                    //   /////// (((((( (((((((((((((((( ///////(((((((((((((                       
+                       //   /  ( ((((((((((((((((,((((((((((.////(((((((((  ((                      
+                                                                                                    
+                                  ACE (Azure Cost Estimator) [1.4]
+
+General help: https://github.com/TheCloudTheory/arm-estimator/discussions
+Bugs & issues: https://github.com/TheCloudTheory/arm-estimator/issues
+
+------------------------------
+
+New version of ACE is available. Current version: 1.4, latest version: v1.5-beta2
+Please update ACE to the latest version.
+
+------------------------------
+
+Run configuration:
+
+-> Scope: ResourceGroup
+-> Susbcription Id: 863a0cb3-32a6-4d07-a94b-b7b08e7cd498
+-> Resource group: mymy
+-> Template file: ../arm-template.json
+-> Deployment mode: Incremental
+-> Threshold: 
+-> Parameters file: Not Set
+-> Currency: USD
+-> Generate JSON output: False
+-> Silent mode: False
+-> Redirect stdout: False
+-> Disabled detailed metrics: False
+-> Generate HTML output: False
+-> HTML output filename: Not Set
+-> Dry run enabled: False
+-> Cache disabled: False
+-> Cache handler: Local
+-> Conversion rate: 1
+-> Webhook URL: Disabled
+
+------------------------------
+
+What If status:
+
+-> Cache miss for What If data.
+-> Waiting for response from What If API.
+-> Saving What If response to cache.
+-> Detected 7 resources.
+
+[Create] simple-vm [Microsoft.Compute/virtualMachines]
+[Create] GuestAttestation [Microsoft.Compute/virtualMachines/extensions]
+[Create] myVMNic [Microsoft.Network/networkInterfaces]
+[Create] default-NSG [Microsoft.Network/networkSecurityGroups]
+[Create] myPublicIP [Microsoft.Network/publicIPAddresses]
+[Create] MyVNET [Microsoft.Network/virtualNetworks]
+[Create] bootdiagsjiul67zmknjly [Microsoft.Storage/storageAccounts]
+
+-------------------------------
+
+-> Changes contain VM resource - attempting to build capabilities cache.
+-> Capabilities cache initialized.
+
+-------------------------------
+
+Estimations:
+
+[Create] simple-vm
+   \--- Type: Microsoft.Compute/virtualMachines
+   \--- Location: eastus
+   \--- Total cost: 26.43 USD
+   \--- Delta: +26.43 USD
+
+Aggregated metrics:
+
+-> P10 LRS Disk [19.71 USD]
+-> B1ls [6.716 USD]
+
+Used metrics:
+
+-> P10 LRS | Premium SSD Managed Disks | P10 LRS Disk | 19.71 for 1/Month
+-> B1ls | Virtual Machines BS Series Windows | B1ls | 0.0092 for 1 Hour
+
+-------------------------------
+
+[Create] myPublicIP
+   \--- Type: Microsoft.Network/publicIPAddresses
+   \--- Location: eastus
+   \--- Total cost: 0.00 USD
+   \--- Delta: +0.00 USD
+
+Aggregated metrics:
+
+No metrics available.
+
+Used metrics:
+
+No metrics available.
+
+-------------------------------
+
+[Create] MyVNET
+   \--- Type: Microsoft.Network/virtualNetworks
+   \--- Location: eastus
+   \--- Total cost: 0.00 USD
+   \--- Delta: +0.00 USD
+
+Aggregated metrics:
+
+No metrics available.
+
+Used metrics:
+
+No metrics available.
+
+-------------------------------
+
+[Create] bootdiagsjiul67zmknjly
+   \--- Type: Microsoft.Storage/storageAccounts
+   \--- Location: eastus
+   \--- Total cost: 0.13 USD
+   \--- Delta: +0.13 USD
+
+Aggregated metrics:
+
+-> LRS Data Stored [0.11399999999999999 USD]
+-> LRS Class 2 Additional IO [0.004 USD]
+-> LRS Class 1 Operations [0.004 USD]
+-> LRS Class 1 Additional IO [0.004 USD]
+-> Class 2 Operations [0.004 USD]
+-> Batch Write Operations [0.00036 USD]
+-> Scan Operations [0.00036 USD]
+-> List Operations [0.00036 USD]
+-> Delete Operations [0.00072 USD]
+-> All Other Operations [0.00036 USD]
+-> Read Operations [0.00072 USD]
+-> LRS Write Operations [0.00036 USD]
+-> LRS List and Create Container Operations [0.00036 USD]
+-> Write Operations [0.00036 USD]
+-> LRS Write Operations - Free [0 USD]
+-> Read Operations - Free [0 USD]
+
+Used metrics:
+
+-> Standard LRS | Tables | LRS Data Stored | 0.045 for 1 GB/Month
+-> Standard LRS | Queues v2 | LRS Data Stored | 0.045 for 1 GB/Month
+-> Standard LRS | General Block Blob | LRS Data Stored | 0.024 for 1 GB/Month
+-> Standard LRS | Queues v2 | LRS Class 2 Additional IO | 0.004 for 10K
+-> Standard LRS | Queues v2 | LRS Class 1 Operations | 0.004 for 10K
+-> Standard LRS | Queues v2 | LRS Class 1 Additional IO | 0.004 for 10K
+-> Standard LRS | Queues v2 | Class 2 Operations | 0.004 for 10K
+-> Standard LRS | Tables | Batch Write Operations | 0.00036 for 10K
+-> Standard LRS | Tables | Scan Operations | 0.00036 for 10K
+-> Standard LRS | Tables | List Operations | 0.00036 for 10K
+-> Standard LRS | Tables | Delete Operations | 0.00036 for 10K
+-> Standard LRS | General Block Blob | All Other Operations | 0.00036 for 10K
+-> Standard LRS | General Block Blob | Read Operations | 0.00036 for 10K
+-> Standard LRS | General Block Blob | Delete Operations | 0.00036 for 10K
+-> Standard LRS | General Block Blob | LRS Write Operations | 0.00036 for 10K
+-> Standard LRS | General Block Blob | LRS List and Create Container Operations | 0.00036 for 10K
+-> Standard LRS | Tables | Read Operations | 0.00036 for 10K
+-> Standard LRS | Tables | Write Operations | 0.00036 for 10K
+-> Standard LRS | General Block Blob | LRS Write Operations - Free | 0 for 10K
+-> Standard LRS | General Block Blob | Read Operations - Free | 0 for 10K
+
+-------------------------------
+
+Free resources:
+
+[Create] myVMNic
+   \--- Type: Microsoft.Network/networkInterfaces
+
+[Create] default-NSG
+   \--- Type: Microsoft.Network/networkSecurityGroups
+
+
+-------------------------------
+
+Unsupported resources:
+
+-> GuestAttestation [Microsoft.Compute/virtualMachines/extensions]
+
+-------------------------------
+
+Summary:
+
+-> Total cost: 26.56 USD
+-> Delta: +26.56 USD
