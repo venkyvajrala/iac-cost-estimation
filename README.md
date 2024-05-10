@@ -15,9 +15,9 @@ This table provides a comparison of various cloud tools and their features acros
 | CSPARMPricingCalculator                | 🔴     | 🔴                   | 🔴          | 🔴                     | 🔴          | 🔴                    | 🔴                  | Azure             |
 | Infracost [Enterprise available]       | ✅     | ✅                   | ✅          | 🟢                     | ✅          | 🔴                    | ✅                  | GCP , AWS , Azure |
 
-                                                    ✅ = YES      🟢 = Most
+                                                ✅ = YES      🟢 = Most
 
-                                                    🔴 = NO       🟠 = Few
+                                                🔴 = NO       🟠 = Few
 
 > [!NOTE]
 > All the additional features supported tools have dashboards ,policies to control cost,reports generation,notification triggers
@@ -37,6 +37,9 @@ This table provides a comparison of various cloud tools and their features acros
 <b>Tagging Policies and Guardrails:</b> You can leverage Infracost to apply tagging policies and implement guardrails for better governance and cost management.<br><br>
 <br><br>
 
+
 > [!NOTE]
-> Infracost supported services can be found [here](https://www.infracost.io/docs/supported_resources/overview/).<br>
-> TFC Supported services can be found [here](https://developer.hashicorp.com/terraform/cloud-docs/cost-estimation).
+> You can estimate your costs with the pricing calculators provided by major cloud providers: <br>
+> - AWS Pricing Calculator: [Click here](https://calculator.aws/)
+> - Microsoft Azure Pricing Calculator [Click here](https://azure.microsoft.com/en-in/pricing/calculator/)
+> - Google Cloud Pricing Calculator [Click here](https://cloud.google.com/products/calculator)
