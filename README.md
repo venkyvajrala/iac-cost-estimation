@@ -4,24 +4,24 @@
 This table provides a comparison of various cloud tools and their features across different cloud providers:
 </br>
 
-| Name                                   | Usable | Pipeline integration | Open source | All services supported | Multi cloud | Cloud native solution | Additional features | Cloud             |
-| -------------------------------------- | ------ | -------------------- | ----------- | ---------------------- | ----------- | --------------------- | ------------------- | ----------------- |
-| Aws cloudformation cli                 | ✅     | ✅                   | ✅          | 🟢                     | 🔴          | ✅                    | 🔴                  | AWS               |
-| arm-estimator                          | ✅     | ✅                   | ✅          | 🟠                     | 🔴          | 🔴                    | 🔴                  | Azure             |
-| Scalr [Enterprise available]           | ✅     | ✅                   | 🔴          | 🟢                     | ✅          | 🔴                    | ✅                  | GCP , AWS , Azure |
-| Terraform cloud [Enterprise available] | ✅     | ✅                   | 🔴          | 🟢                     | ✅          | 🔴                    | ✅                  | GCP , AWS , Azure |
-| terraform-aws-pricing                  | ✅     | ✅                   | ✅          | 🟠                     | 🔴          | 🔴                    | 🔴                  | AWS               |
-| terracost                              | ✅     | ✅                   | ✅          | 🔴                     | 🟠          | 🔴                    | 🔴                  | GCP , AWS , Azure |
-| CSPARMPricingCalculator                | 🔴     | 🔴                   | 🔴          | 🔴                     | 🔴          | 🔴                    | 🔴                  | Azure             |
-| Infracost [Enterprise available]       | ✅     | ✅                   | ✅          | 🟢                     | ✅          | 🔴                    | ✅                  | GCP , AWS , Azure |
+| Name                                   | Usable | Pipeline integration | Open source | All services supported | Multi cloud | Cloud native solution | Additional features | Self hosting | Cloud             |
+| -------------------------------------- | ------ | -------------------- | ----------- | ---------------------- | ----------- | --------------------- | ------------------- |------------- | ----------------- |
+| Aws cloudformation cli                 | ✅     | ✅                   | ✅          | 🟢                     | 🔴          | ✅                    | 🔴                  | 🔴                |  AWS               |
+| arm-estimator                          | ✅     | ✅                   | ✅          | 🟠                     | 🔴          | 🔴                    | 🔴                  | 🔴                |  Azure             |
+| Scalr [Enterprise available]           | ✅     | ✅                   | 🔴          | 🟢                     | ✅          | 🔴                    | ✅                  | ✅                |  GCP , AWS , Azure |
+| Terraform cloud [Enterprise available] | ✅     | ✅                   | 🔴          | 🟢                     | ✅          | 🔴                    | ✅                  | ✅                |  GCP , AWS , Azure |
+| terraform-aws-pricing                  | ✅     | ✅                   | ✅          | 🟠                     | 🔴          | 🔴                    | 🔴                  | 🔴                |  AWS               |
+| terracost                              | ✅     | ✅                   | ✅          | 🔴                     | 🟠          | 🔴                    | 🔴                  | 🔴                |  GCP , AWS , Azure |
+| CSPARMPricingCalculator                | 🔴     | 🔴                   | 🔴          | 🔴                     | 🔴          | 🔴                    | 🔴                  | 🔴                |  Azure             |
+| Infracost [Enterprise available]       | ✅     | ✅                   | ✅          | 🟢                     | ✅          | 🔴                    | ✅                  | ✅                |  GCP , AWS , Azure |
 
                                                 ✅ = YES      🟢 = Most
 
                                                 🔴 = NO       🟠 = Few
 
 > [!NOTE]
-> All the additional features supported tools have dashboards ,policies to control cost,reports generation,notification triggers
-
+> All the additional features supported tools have dashboards ,policies to control cost,reports generation,notification triggers <br>
+Pricing details: [terraform cloud pricing](https://www.hashicorp.com/products/terraform/pricing), [scalr pricing](https://www.scalr.com/pricing),[infracost pricing](https://www.infracost.io/pricing/).
 <hr>
 <br>
 
